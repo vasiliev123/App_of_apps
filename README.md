@@ -8,5 +8,7 @@ By selecting different branches you can get the sample code that you should have
 
 |Branches  | Block  | Description  | 
 |---|---|---|
-| main | selenium | Selenium tests for application |
-| final | CI/CD 6 | Complete CD/CD pipeline |
+| main | Tests | Selenium tests for application |
+| ansible | Ansible 2 | Application deployment code |
+| jenkinsfile | CI/CD 6  | Jenkinsfile |
+| final | CI/CD 7 | Complete CD/CD pipeline |
