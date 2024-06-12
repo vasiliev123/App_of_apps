@@ -20,7 +20,9 @@ pipeline {
 
 		stage('Adjust Version') {
 			steps {
-				currentBuild.description = "Backend: ${backendDockerTag}, Frontend: ${frontendDockerTag}"
+				script {
+					currentBuild.description = "Backend: ${backendDockerTag}, Frontend: ${frontendDockerTag}"
+				}
 			}
 		}
 	}
