@@ -39,7 +39,7 @@ pipeline {
 				script {
 					withEnv(["FRONTEND_IMAGE=$frontendImage:$frontendDockerTag", 
 										"BACKEND_IMAGE=$backendImage:$backendDockerTag"]) {
-						sh "docker-compose up -d"
+						sh "docker compose up -d"
 					}
 				}
 			}
