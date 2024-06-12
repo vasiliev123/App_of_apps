@@ -45,10 +45,11 @@ pipeline {
 			}
 		}
 	}
+
 	post {
-			always {
-				sh "docker compose down"
-				cleanWs()
-			}
-    }
+		always {
+			sh "docker compose down"
+			cleanWs()
+		}
+  }
 }
