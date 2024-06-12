@@ -1,13 +1,13 @@
 pipeline {
-    agent {
-        label 'agent'
-    }
+	agent {
+		label 'agent'
+	}
 
-    stages {
-        stage('Get code') {
-            steps {
-                checkout scm
-            }
-        }
-    }
+	stages {
+		stage('Get code') {
+			steps {
+				checkout scm
+			}
+		}
+	}
 }
